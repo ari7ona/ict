@@ -75,6 +75,29 @@ distance = 6371.01 * math.acos(math.sin(t1)*math.sin(t2) + math.cos(t1)*math.cos
 print("The distance between two point is " + str(distance) + " kilometers")
 
 #ex13
+x = int(input("Enter price: "))
+while x > 0:
+    if x >= 200:
+        print("200 ")
+        x -= 200
+    elif x >= 100 and x < 200:
+        print("100 ")
+        x -= 100
+    elif x >= 50 and x < 100:
+        print("50 ")
+        x -= 50
+    elif x >= 25 and x < 50:
+        print("25 ")
+        x -= 25
+    elif x >= 10 and x < 25:
+        print("10 ")
+        x -= 10
+    elif x >= 5 and x < 10:
+        print("5 ")
+        x -= 5
+    elif x >= 1 and x < 5:
+        print("1 ")
+        x -= 1
 
 #ex14
 x = int(input("Enter feet: "))
@@ -97,6 +120,11 @@ volume = 4/3*math.pi*r**3
 print("The area: " + str(area), "The volume: " + str(volume))
 
 #ex17
+m,t = map(int,input("Mass and temperature").split())
+c = 4.186
+q = m*c*t
+CentPerKw = 8.9
+print("q =",q,"J\nCost of boiling water:",q*CentPerKw/(60*60))
 
 #ex18
 import math
@@ -209,3 +237,5 @@ number3 = int(input('Enter Third number : '))
 print("Sorted numbers: " + str(min(number1, number2, number3)), str(number1+number2+number3-min(number1, number2, number3)-max(number1, number2, number3)), str(max(number1, number2, number3)))
 
 #ex33
+n = int(input())
+print("Just price: {:.2f}".format(n*3.49),"\ndiscount is 60%: {:.2f}".format(n*3.49*0.6), "\nthen total price: ","{:.2f}".format(n*0.4*3.49))
