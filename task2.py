@@ -220,5 +220,5 @@ for i in range(n):
 for i in range(k):
     inp = int(input())
     inp2 = int(input())
-    arr[inp-1:inp2-1] = "."
+    arr[inp:inp2] = "."
 print(arr)
