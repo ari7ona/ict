@@ -210,3 +210,15 @@ while i < (x - 1):
     else:
         i += 1
 print(cnt)
+
+#ex20
+n = int(input())
+k = int(input())
+arr = []
+for i in range(n):
+    arr.append(" I ")
+for i in range(k):
+    inp = int(input())
+    inp2 = int(input())
+    arr[inp-1:inp2-1] = "."
+print(arr)
