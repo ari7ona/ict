@@ -1,3 +1,4 @@
+#ex1
 arr = ['a', 'o', 'y', 'e', 'u', 'i']
 inp = input().lower()
 a = ""
